@@ -1,4 +1,4 @@
-name: Data Engineering CI
+name: CI - Glue Serverless Magic ✨
 on:
     push:
         branches:
