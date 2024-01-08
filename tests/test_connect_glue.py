@@ -23,7 +23,7 @@ class TestInitGlue(unittest.TestCase):
         mock_get_resolved_options.return_value = {
             "JOB_NAME": "test",
             "S3_READ_PATH": "test_read_path",
-            "S3_WRITE_PATH": "tests_write_path"
+            "S3_WRITE_PATH": "tests_write_path",
         }
 
         # Call the function to test
@@ -34,11 +34,7 @@ class TestInitGlue(unittest.TestCase):
         mock_glue_context.assert_called_once_with(mock_spark_context_instance)
         mock_get_resolved_options.assert_called_once_with(
             sys.argv,
-            [
-                "JOB_NAME",
-                "S3_READ_PATH",
-                "S3_WRITE_PATH"
-            ],
+            ["JOB_NAME", "S3_READ_PATH", "S3_WRITE_PATH"],
         )
 
         # Check if the returned values are correct
@@ -48,7 +44,7 @@ class TestInitGlue(unittest.TestCase):
             {
                 "JOB_NAME": "test",
                 "S3_READ_PATH": "test_read_path",
-                "S3_WRITE_PATH": "tests_write_path"
+                "S3_WRITE_PATH": "tests_write_path",
             },
         )
 
@@ -88,7 +84,7 @@ class TestInitGlue(unittest.TestCase):
         mock_get_resolved_options.return_value = {
             "JOB_NAME": "test",
             "S3_READ_PATH": "test_read_path",
-            "S3_WRITE_PATH": "tests_write_path"
+            "S3_WRITE_PATH": "tests_write_path",
         }
 
         # Call the function to test
