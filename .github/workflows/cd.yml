@@ -42,4 +42,5 @@ jobs:
 
             - name: Deploy Jobs on Glue
               run: |
+                chmod +x automation/deploy_glue_job.sh
                 automation/deploy_glue_job.sh $S3_BUCKET_NAME $AWS_GLUE_ROLE
