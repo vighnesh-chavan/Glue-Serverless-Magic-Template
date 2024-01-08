@@ -1,0 +1,4 @@
+# this is my custom file for read & write path based on environment
+
+S3_READ_PATH="s3://glue-bucket-vighnesh/rawdata/"
+S3_WRITE_PATH="s3://glue-bucket-vighnesh/transformed/"
