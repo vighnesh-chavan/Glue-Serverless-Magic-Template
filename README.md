@@ -27,4 +27,8 @@ Steps:
     AWS_GLUE_ROLE
     ```
 
+## Note
+
+You need to make a .env file in the root folder with environment variables. Also make sure to pass these environment in the ```automation/deploy_glue_job.sh``` file so that they get deployed to the actual Glue job on production.
+
 Thats it! You can do magic with serverless architecture 😃

@@ -14,7 +14,7 @@ def init_glue():
         print("\nRunning Glue Online\n")
     except GlueArgumentError:
         print("\nRunning Glue Locally\n")
-        load_dotenv("../.env")
+        load_dotenv()
         args = {"JOB_NAME": "local"}
 
     for key, value in args.items():
